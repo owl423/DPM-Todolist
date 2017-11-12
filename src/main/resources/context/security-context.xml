@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+	">
+
+    <http use-expressions="true">
+
+        <intercept-url pattern="/" access="permitAll()"/>
+        <intercept-url pattern="/login" access="permitAll()"/>
+        <intercept-url pattern="/register" access="permitAll()"/>
+        <intercept-url pattern="/static/**" access="permitAll()"/>
+        <intercept-url pattern="/**" access="hasAnyRole('ROLE_USER')"/>
+
+        <csrf disabled="true"/>
+
+        <form-login
+                login-page="/login"
+                username-parameter="username"
+                password-parameter="password"
+                authentication-success-handler-ref="authenticationProcessSuccessHandler"
+                authentication-failure-handler-ref="authenticationProcessFailureHandler"/>
+
+        <logout
+                logout-url="/logout"
+                logout-success-url="/"
+                invalidate-session="true"/>
+
+    </http>
+
+    <beans:bean id="userService" class="com.depromeet.todo.service.UserService"/>
+    <beans:bean id="authenticationProvider" class="com.depromeet.todo.security.provider.SecurityAuthenticationProvider"/>
+
+    <beans:bean id="authenticationProcessSuccessHandler" class="com.depromeet.todo.security.handler.AuthenticationProcessSuccessHandler"/>
+    <beans:bean id="authenticationProcessFailureHandler" class="com.depromeet.todo.security.handler.AuthenticationProcessFailureHandler"/>
+
+    <authentication-manager>
+        <authentication-provider ref="authenticationProvider"/>
+        <authentication-provider user-service-ref="userService"/>
+    </authentication-manager>
+
+</beans:beans>
