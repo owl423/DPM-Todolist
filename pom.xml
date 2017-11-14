@@ -6,7 +6,7 @@
     <artifactId>todo</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>Spring Practice</name>
+    <name>TODO</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -21,6 +21,7 @@
         <jackson-version>2.8.5</jackson-version>
         <jackson-mapper-asl-version>1.9.13</jackson-mapper-asl-version>
 
+        <lucy-xss-servlet-version>2.0.0</lucy-xss-servlet-version>
         <servlet-api-version>3.1.0</servlet-api-version>
         <jsp-api-version>2.2.1</jsp-api-version>
 
@@ -113,6 +114,11 @@
             <version>${hibernate-validator-version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.navercorp.lucy</groupId>
+            <artifactId>lucy-xss-servlet</artifactId>
+            <version>${lucy-xss-servlet-version}</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -170,7 +176,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-practice</finalName>
+        <finalName>todo-dpm</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
