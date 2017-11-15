@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="136px" viewBox="0 0 113 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(-25.000000, 16.000000)">
+            <text id="Check-Check" font-family="BMJUAOTF, BM JUA_OTF" font-size="18" font-weight="normal">
+                <tspan x="34.574" y="106" fill="#EF6327">C</tspan>
+                <tspan x="45.698" y="106" fill="#C4D5E0">heck</tspan>
+                <tspan x="79.25" y="106" fill="#FFFFFF"> </tspan>
+                <tspan x="83.75" y="106" fill="#EF6327">C</tspan>
+                <tspan x="94.874" y="106" fill="#C4D5E0">heck</tspan>
+            </text>
+            <path d="M120.6221,39.5609 C120.6221,61.1339 103.1341,78.6219 81.5611,78.6219 C59.9881,78.6219 42.5001,61.1339 42.5001,39.5609 C42.5001,17.9879 59.9881,0.4999 81.5611,0.4999 C103.1341,0.4999 120.6221,17.9879 120.6221,39.5609 Z" id="Stroke-1" stroke="#C4D5E0" stroke-width="9"></path>
+            <path d="M66.3081,34.619 L79.4551,48.998 L112.5511,18.886 L113.9511,17.722 C118.1631,23.956 120.6221,31.471 120.6221,39.561 C120.6221,61.134 103.1341,78.622 81.5611,78.622 C71.4281,78.622 62.1961,74.764 55.2541,68.435" id="Stroke-3" stroke="#E2612A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

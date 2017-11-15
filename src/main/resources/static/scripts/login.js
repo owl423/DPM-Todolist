@@ -6,7 +6,7 @@ Vue.component('login', {
       password: ''
     }
   },
-  method: {
+  methods: {
     login () {
       fetch('/login', {
         method: 'post',
