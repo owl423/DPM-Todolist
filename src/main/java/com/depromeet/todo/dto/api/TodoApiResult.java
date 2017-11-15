@@ -13,6 +13,7 @@ public class TodoApiResult {
     private Long todoId;
     private String title;
     private boolean done;
+    private int tag;
 
     private Date created;
     private Date lastModified;
@@ -26,6 +27,7 @@ public class TodoApiResult {
 
         result.todoId = todo.getId();
         result.title = todo.getTitle();
+        result.tag = todo.getTag();
         result.created = todo.getCreated();
         result.lastModified = todo.getLastModified();
 

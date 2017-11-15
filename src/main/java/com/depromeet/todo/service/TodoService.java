@@ -15,6 +15,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TodoService extends BaseService {
@@ -34,6 +35,7 @@ public class TodoService extends BaseService {
         Todo todo = new Todo();
 
         todo.setTitle(form.getTitle());
+        todo.setTag(Optional.ofNullable(form.getTag()).orElse(0));
         todo.setUser(user);
 
         return todoRepository.save(todo);
@@ -57,6 +59,10 @@ public class TodoService extends BaseService {
 
         if (form.getDone() != null) {
             todo.setDone(form.getDone());
+        }
+
+        if (form.getTag() != null) {
+            todo.setTag(form.getTag());
         }
 
         return todoRepository.save(todo);

@@ -19,6 +19,8 @@ public class Todo {
 
     private boolean done;
 
+    private int tag;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date created;
 
