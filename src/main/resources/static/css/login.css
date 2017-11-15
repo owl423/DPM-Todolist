@@ -18,12 +18,12 @@ a{
   height: 63vh;
   position: relative;
 }
+#Check-Check{
+  font-family: 'BM JUA';
+}
 .logo{
-  width: 120px;
-  height: 120px;
-  background: url(../images/Logo.svg) center;
-  background-size: cover;
-  text-indent: -9999px;
+  width: 200px;
+  height: 200px;
 }
 .logo-name span {
   color: rgb(239, 99, 39)
