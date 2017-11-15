@@ -7,9 +7,9 @@ import java.util.Date;
 
 public class DateUtil {
 
-    private static final SimpleDateFormat format = new SimpleDateFormat("yyyymmdd");
+    private static final SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 
-    public static Date truncate(Date date) {
+    private static Date truncate(Date date) {
 
         Calendar calendar = Calendar.getInstance();
 
@@ -23,7 +23,7 @@ public class DateUtil {
         return calendar.getTime();
     }
 
-    public static Date now() {
+    private static Date now() {
         return new Date();
     }
 
