@@ -50,6 +50,10 @@ public class TodoService extends BaseService {
         return findOwnedTodo(todoRepository, user, todoId);
     }
 
+    public List<Todo> search(User user, String query) {
+        return todoRepository.search(user.getId(), query);
+    }
+
     public Todo modifyTodo(User user, Long todoId, TodoForm form) {
 
         Todo todo = findOwnedTodo(todoRepository, user, todoId);
