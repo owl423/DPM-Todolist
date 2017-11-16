@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/search" transform="translate(8.147505, 7.639208) rotate(11.000000) translate(-8.147505, -7.639208) translate(1.647505, 2.139208)" stroke="#FFFFFF" stroke-width="2">
+            <circle id="Oval-2" cx="5" cy="5" r="5"></circle>
+            <path d="M9.5,8.5 L13,11" id="Line" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
