@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>로그인 - Check Check</title>
   <script src="https://unpkg.com/vue@2.5.3/dist/vue.min.js"></script>
-  <link rel="stylesheet" href="../../../resources/static/css/" type="text/css">
+  <link rel="stylesheet" href="/static/css/login.css" type="text/css">
 </head>
 <body>
   <div class="wrapper">
@@ -37,6 +37,6 @@
         <button class="login-btn rect" @click="login" @touch="login">Login</button>
       </form>
   </script>
-  <script src="../../../resources/static/scripts/login.js"></script>
+  <script src="/static/scripts/login.js"></script>
 </body>
 </html>

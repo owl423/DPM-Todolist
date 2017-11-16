@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>회원가입 - Check Check</title>
   <script src="https://unpkg.com/vue@2.5.3/dist/vue.min.js"></script>  
-  <link rel="stylesheet" href="../../../resources/static/css/register.css">
+  <link rel="stylesheet" href="/static/css/register.css">
 </head>
 <body>
   <div class="wrapper">
@@ -46,7 +46,7 @@
         <button class="sign-up-btn" @click="register">Sign Up</button>
       </form>
     </script>
-    <script src="../../../resources/static/scripts/register.js"></script>
+    <script src="/static/scripts/register.js"></script>
   </div>
 </body>
 </html>
