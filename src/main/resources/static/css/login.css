@@ -1,8 +1,4 @@
-body{
-  margin: 0;
-  padding: 0;
-}
-h1{
+body, h1{
   margin: 0;
   padding: 0;
 }
@@ -36,6 +32,7 @@ a{
 }
 
 .rect{
+  box-sizing: border-box;  
   display: block;
   width: 72.2222%;
   margin: 0 auto;
