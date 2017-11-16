@@ -13,7 +13,7 @@
     <header class="header">
       <div class="center">
         <h1>
-            <img class="logo" src="../static/images/Logo.svg" alt="checkcheck logo">
+            <img class="logo" src="/static/images/Logo.svg" alt="checkcheck logo">
         </h1>
       </div>
     </header>
