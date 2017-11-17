@@ -21,10 +21,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -65,6 +67,17 @@ public class TodoApiController {
 
         Todo created = todoService.newTodo(user, form);
         return ResponseEntity.status(HttpStatus.CREATED).body(todoApiResultBuilder.buildTodoApiResult(created));
+    }
+
+    @GetMapping("/todos/search")
+    public ResponseEntity<List<TodoApiResult>> search(@AuthenticationPrincipal User user, @RequestParam(value = "query", required = false) String query) {
+
+        if (StringUtils.isEmpty(query) || query.length() > 200) {
+            return ResponseEntity.status(HttpStatus.OK).body(todoApiResultBuilder.buildTodosApiResult(Collections.emptyList()));
+        }
+
+        List<Todo> result = todoService.search(user, query);
+        return ResponseEntity.status(HttpStatus.OK).body(todoApiResultBuilder.buildTodosApiResult(result));
     }
 
     @GetMapping("/todos/{todo_id}/detail")
