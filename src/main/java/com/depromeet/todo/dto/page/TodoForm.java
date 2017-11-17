@@ -11,4 +11,6 @@ public class TodoForm {
     private String title;
 
     private Boolean done;
+
+    private Integer tag;
 }
