@@ -18,7 +18,7 @@
         <hibernate-version>5.2.10.Final</hibernate-version>
         <hibernate-validator-version>5.4.1.Final</hibernate-validator-version>
 
-        <jackson-version>2.8.5</jackson-version>
+        <jackson-version>2.11.0</jackson-version>
         <jackson-mapper-asl-version>1.9.13</jackson-mapper-asl-version>
 
         <lucy-xss-servlet-version>2.0.0</lucy-xss-servlet-version>
